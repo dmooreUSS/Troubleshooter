@@ -1,0 +1,55 @@
+Ticket/Case: 01224563
+Workflow: NMD/Circuit Status/Outage for AGG/PEC
+
+Workflow Inputs
+---------------
+BVI: BVI21230
+ADVA IP Address: 10.255.194.227
+interface: na
+Circuit ID: AD8QV
+
+Troubleshooting
+---------------
+Step 1 - View Customer Interfaces
+Findings: RP/0/RSP1/CPU0:AGG-02.KWD#sh int BVI21230
+Sun Nov  1 16:19:57.446 EST
+BVI21230 is up, line protocol is up 
+  Interface state transitions: 5
+  Hardware is Bridge-Group Virtual Interface, address is 70e4.2275.b036
+  Description: Acrisure/Order AD8QV
+  Internet address is 64.141.143.217/29
+  MTU 1514 bytes, BW 10000000 Kbit (Max: 10000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,  loopback not set,
+  Last link flapped 3y08w
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 6w6d, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 3 packets/sec
+     198264632922 packets input, 220100106887182 bytes, 1513 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 1904872 broadcast packets, 4882 multicast packets
+     182905064563 packets output, 151735959612306 bytes, 0 total output drops
+     Output 206125934 broadcast packets, 11762 multicast packets
+
+Step 2 - View interface config
+Decision: Yes
+Findings: RP/0/RSP1/CPU0:AGG-02.KWD#sh run int BVI21230 
+Sun Nov  1 16:20:10.725 EST
+interface BVI21230
+ description Acrisure/Order AD8QV
+ ipv4 address 64.141.143.217 255.255.255.248
+
+Step 3 - Ping ADVA
+Findings: Sun Nov  1 16:34:46.293 EST
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.255.194.227, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+
+Step 4 - What can you conclude with your testing and findings?
+Findings: circuit is down
+
+Step 5 - No description
+Conclusion: Circuit is hard down

@@ -1,0 +1,27 @@
+Ticket/Case: 01239387
+Workflow: NMD/Circuit Status/Outage for AGG/PEC
+
+Workflow Inputs
+---------------
+BVI: BVI21973
+ADVA IP Address: 10.255.193.50
+interface: na
+Circuit ID: AF2RJ
+
+Troubleshooting
+---------------
+Step 1 - View Customer Interfaces
+Findings: Last input 00:46:22, output 00:00:00
+
+Step 2 - View interface config
+Decision: Yes
+Findings: Member Driven Technologies (Team One)/Order AF2RJ
+
+Step 3 - Ping ADVA
+Findings: Success rate is 0 percent (0/5)
+
+Step 4 - What can you conclude with your testing and findings?
+Findings: circuit is down
+
+Step 5 - No description
+Conclusion: Sent LCON email

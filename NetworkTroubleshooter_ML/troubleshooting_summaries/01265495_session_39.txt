@@ -1,0 +1,27 @@
+Ticket/Case: 01265495
+Workflow: NMD/Circuit Status/Outage for AGG/PEC
+
+Workflow Inputs
+---------------
+BVI: BVI21507
+ADVA IP Address: 10.255.194.233
+interface: Te0/0/0/20.1258
+Circuit ID: AE0U1
+
+Troubleshooting
+---------------
+Step 1 - View Customer Interfaces
+Findings: Last input 00:03:18, output 00:00:00
+
+Step 2 - View interface config
+Decision: Yes
+Findings: description Farm Bureau Life Insurance Company of MI/Order AE0U1
+
+Step 3 - Ping ADVA
+Findings: Success rate is 0 percent (0/5)
+
+Step 4 - What can you conclude with your testing and findings?
+Findings: The circuit is down
+
+Step 5 - No description
+Conclusion: Sent Node Down-LCON email

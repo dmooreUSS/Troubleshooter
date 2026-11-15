@@ -1,0 +1,35 @@
+Ticket/Case: 202.
+Workflow: Packet Loss/Bandwidth
+
+Workflow Inputs
+---------------
+BVI: 1222
+ADVA IP Address: 0.0.0.0
+interface: gip/o/o
+VLAN: 2222
+MR IP Address: 10.0.0.0
+First Availabel IP Address: 0.0.0.1
+
+Troubleshooting
+---------------
+Step 1 - Do work withtout commands
+Findings: No findings were entered.
+
+Step 2 - View Customer Interfaces
+Decision: Yes
+Findings: 20
+
+Step 3 - ping testing 
+Decision: Yes
+Findings: 100
+
+Step 4 - ping testing
+Decision: No
+Findings: 100
+
+Step 8 - ping testing 
+Decision: No
+Findings: 100
+
+Step 9 - Do work withtout commands
+Conclusion: no packet loss

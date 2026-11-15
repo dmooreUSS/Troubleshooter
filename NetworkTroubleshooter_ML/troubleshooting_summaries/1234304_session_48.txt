@@ -1,0 +1,9 @@
+Ticket/Case: 1234304
+Workflow: General ADVA Troubleshooting
+
+Workflow Inputs
+---------------
+ADVA IP Address: 10.255.65.223
+
+Troubleshooting
+---------------

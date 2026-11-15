@@ -1,0 +1,12 @@
+Ticket/Case: 01239387
+Workflow: NMD/Circuit Status/Outage for AGG/PEC
+
+Workflow Inputs
+---------------
+BVI: BVI21973
+ADVA IP Address: 10.255.193.50
+interface: na
+Circuit ID: AF2RJ
+
+Troubleshooting
+---------------

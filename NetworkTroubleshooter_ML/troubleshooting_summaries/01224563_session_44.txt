@@ -1,0 +1,12 @@
+Ticket/Case: 01224563
+Workflow: NMD/Circuit Status/Outage for AGG/PEC
+
+Workflow Inputs
+---------------
+BVI: BVI21230
+ADVA IP Address: 10.255.194.229
+interface: na
+Circuit ID: AD8QV
+
+Troubleshooting
+---------------

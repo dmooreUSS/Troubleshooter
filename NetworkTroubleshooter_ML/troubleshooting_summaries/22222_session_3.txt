@@ -1,0 +1,15 @@
+Ticket/Case: 22222
+Workflow: ADVA
+
+Workflow Inputs
+---------------
+ADVA IP Address: 0.0.0.0
+
+Troubleshooting
+---------------
+Step 1 - Press enter to continue
+Findings: No findings were entered.
+
+Step 2 - Are there any alarms that would explain
+Decision: No
+Findings: C:\Users\dmoore\AppData\Local\Programs\Python\Python314\python.exe "c:/Users/dmoore/OneDrive - US Signal Company/Desktop/Python/network_troubleshooter_open_ended.py"

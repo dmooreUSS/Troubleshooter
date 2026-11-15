@@ -1,0 +1,10 @@
+Ticket/Case: 012000
+Workflow: Outage-AGG/PEC
+
+Workflow Inputs
+---------------
+BVI: 1234
+ADVA IP Address: 0.0.0.0
+
+Troubleshooting
+---------------

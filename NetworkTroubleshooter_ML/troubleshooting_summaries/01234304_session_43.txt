@@ -1,0 +1,45 @@
+Ticket/Case: 01234304
+Workflow: NMD/Circuit Status/Outage for AGG/PEC
+
+Workflow Inputs
+---------------
+BVI: BVI 19232
+ADVA IP Address: 10.255.65.223
+interface: na
+Circuit ID: AC2FS
+
+Troubleshooting
+---------------
+Step 1 - View Customer Interfaces
+Findings: BVI19232 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is Bridge-Group Virtual Interface, address is b414.89de.eee9
+  Description: Patrick Industries/Order !AB7I0 
+  Internet address is 64.141.181.145/29
+  MTU 1514 bytes, BW 10000000 Kbit (Max: 10000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,  loopback not set,
+  Last link flapped 3y34w
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 1y02w, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 13000 bits/sec, 40 packets/sec
+     64966094949 packets input, 46646339792614 bytes, 120 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 14078473 broadcast packets, 385499 multicast packets
+     73864944487 packets output, 37401812113301 bytes, 0 total output drops
+     Output 3584193854 broadcast packets, 0 multicast packets
+
+Step 2 - View interface config
+Decision: Yes
+Findings: Patrick Industries/Order !AB7I0
+
+Step 3 - Ping ADVA
+Findings: Success rate is 0 percent (0/5
+
+Step 4 - What can you conclude with your testing and findings?
+Findings: the circuit is down for a while
+
+Step 5 - No description
+Conclusion: circuit is disconnected
